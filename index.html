@@ -3,28 +3,244 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Html & Css</title>
+    <title>Meesho</title>
 </head>
 <body>
 
     <style>
-        h1{
-            background-color: black;
-            color: white;
-            padding: 12px;
-            margin: 10px;
-            border-radius: 10px;
-            text-align: center;
+        body{background-color: black;}
+        *{margin: 0;padding: 0;}
+        .main-header{
+            background-color: rgb(50, 50, 50);
         }
+        .main-header .header-in{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .main-header .header-in .menu ul{
+            display: flex;
+        }
+
+        .main-header .header-in .menu ul li{
+            list-style: none;
+            margin: 0px 5px;
+            padding: 20px 15px;
+            color: white;
+            font-weight: bold;
+        }
+        .main-header .header-in .btns .login{
+            background-color: transparent;
+            padding: 13px 35px;
+            border: 2px solid rgb(68, 68, 198);
+            border-radius: 6px;
+            color: white;
+            margin: 0px 15px;
+            font-weight: bold;
+        }
+       
+         .main-header .header-in .btns .sell-online{
+            background-color: rgb(68, 68, 198);
+            color: white;
+            font-weight: bold;
+            border-radius: 6px;
+            border: none;
+            padding: 15px 40px;
+         }
+
+             .main-box{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .box{
+                background-color: rgb(63, 62, 62);
+                color: white;
+                padding: 15px;
+                margin: 20px;
+                border-radius: 10px;
+                width: 28%;
+                display: flex;
+            }
+
+            .box-in{
+                width: 45%;
+                background-color: red;
+                padding: 10px;
+                margin: 10px;
+                border-radius: 10px;
+            }
+
+            .box-in img{width: 100%;height: 100%;border-radius: 6px;}
+            .box-in button{
+                padding: 12px;
+                width: 100%;
+                margin-top: 10px;
+                border: none;
+                border-radius: 10px;
+                background-color: white;
+                color: red;
+                border-bottom: 4px solid blue;
+                font-weight: bold;
+            }
+
+            .box-in p{
+                margin-top: 10px;
+                line-height: 26px;
+            }
+
+         @media (min-width : 200px) and (max-width : 600px){
+            .header-in{
+                display: grid!important;
+                text-align: center;
+            }
+
+            .header-in .logo img{
+                width: 145px;
+            }
+
+            .header-in .menu ul{
+                display: grid!important;
+                margin-bottom: 20px;
+            }
+
+            .main-header .header-in .menu ul li{
+                background-color: white;
+                color: black;
+                border-radius: 10px;
+                margin: 5px!important;
+                padding: 10px!important;
+            }
+
+            .main-box .box{
+                width: 95%;
+                display: grid!important;
+            }
+
+            .main-box .box .box-in{
+                width: 90%!important;
+            }
+         }
     </style>
-    
-    <h1>My first live website...</h1>
-    <h1>My first live website...</h1>
-    <h1>My first live website...</h1>
-    <h1>My first live website...</h1>
-    <h1>My first live website...</h1>
-    <h1>My first live website...</h1>
-    <h1>My first live website...</h1>
+
+
+    <div class="main-header">
+        <div class="header-in">
+            <div class="logo">
+                <img src="https://supplier.meesho.com/images/logo.svg"/>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>Home</li>
+                    <li>Sell Online</li>
+                    <li>How Its Work</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                </ul>
+            </div>
+            <div class="btns"> 
+                <button class="login">Login</button>
+                <button class="sell-online">Sell Online</button>
+            </div>
+        </div>
+    </div>
+
+     <div class="main-box">
+            <div class="box">
+                <div class="box-in">
+                    <img src="./beautiful-natural-image-1844362_640.jpg"/>
+                </div>
+                 <div class="box-in">
+                    <h1>Nature image</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, culpa aliquam totam molestiae! Error ea modi commodi nihil corporis dolores!</p>
+                    <button>Download Image</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-in">
+                    <img src="./beautiful-natural-image-1844362_640.jpg"/>
+                </div>
+                 <div class="box-in">
+                    <h1>Nature image</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, culpa aliquam totam molestiae! Error ea modi commodi nihil corporis dolores!</p>
+                    <button>Download Image</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-in">
+                    <img src="./beautiful-natural-image-1844362_640.jpg"/>
+                </div>
+                 <div class="box-in">
+                    <h1>Nature image</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, culpa aliquam totam molestiae! Error ea modi commodi nihil corporis dolores!</p>
+                    <button>Download Image</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-in">
+                    <img src="./beautiful-natural-image-1844362_640.jpg"/>
+                </div>
+                 <div class="box-in">
+                    <h1>Nature image</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, culpa aliquam totam molestiae! Error ea modi commodi nihil corporis dolores!</p>
+                    <button>Download Image</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-in">
+                    <img src="./beautiful-natural-image-1844362_640.jpg"/>
+                </div>
+                 <div class="box-in">
+                    <h1>Nature image</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, culpa aliquam totam molestiae! Error ea modi commodi nihil corporis dolores!</p>
+                    <button>Download Image</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-in">
+                    <img src="./beautiful-natural-image-1844362_640.jpg"/>
+                </div>
+                 <div class="box-in">
+                    <h1>Nature image</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, culpa aliquam totam molestiae! Error ea modi commodi nihil corporis dolores!</p>
+                    <button>Download Image</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-in">
+                    <img src="./beautiful-natural-image-1844362_640.jpg"/>
+                </div>
+                 <div class="box-in">
+                    <h1>Nature image</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, culpa aliquam totam molestiae! Error ea modi commodi nihil corporis dolores!</p>
+                    <button>Download Image</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-in">
+                    <img src="./beautiful-natural-image-1844362_640.jpg"/>
+                </div>
+                 <div class="box-in">
+                    <h1>Nature image</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, culpa aliquam totam molestiae! Error ea modi commodi nihil corporis dolores!</p>
+                    <button>Download Image</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-in">
+                    <img src="./beautiful-natural-image-1844362_640.jpg"/>
+                </div>
+                 <div class="box-in">
+                    <h1>Nature image</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, culpa aliquam totam molestiae! Error ea modi commodi nihil corporis dolores!</p>
+                    <button>Download Image</button>
+                </div>
+            </div>
+            
+            
+            
+        </div>
     
 </body>
 </html>
